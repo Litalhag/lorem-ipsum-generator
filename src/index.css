@@ -38,7 +38,7 @@ html {
   /* rest of the colors */
   --black: #222;
   --white: #fff;
-  --red-light: #f8d7da;
+  --red-light: #9a5d62;
   --red-dark: #842029;
   --green-light: #d1e7dd;
   --green-dark: #0f5132;
@@ -46,7 +46,7 @@ html {
   --small-text: 0.875rem;
   --extra-small-text: 0.7em;
   /* rest of the vars */
-  --backgroundColor: var(--grey-50);
+  --backgroundColor: var(--grey-200);
   --textColor: var(--grey-900);
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
@@ -136,7 +136,7 @@ ul {
 .btn {
   cursor: pointer;
   color: var(--white);
-  background: var(--primary-500);
+  background: var(--red-dark);
   border: transparent;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
@@ -147,7 +147,7 @@ ul {
   display: inline-block;
 }
 .btn:hover {
-  background: var(--primary-700);
+  background: var(--red-light);
   box-shadow: var(--shadow-3);
 }
 .btn-hipster {
@@ -262,6 +262,17 @@ ul {
   text-transform: uppercase;
   text-align: center;
 }
+
+.section-center h5 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+span {
+  color: var(--red-dark);
+  font-weight: 500;
+}
+
 .lorem-form {
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
@@ -292,4 +303,19 @@ ul {
 .lorem-text p {
   line-height: 2;
   margin-bottom: 2rem;
+}
+
+.count[type='number'] {
+  color: var(--red-dark);
+  background-color: var(--grey-100);
+}
+
+.count[type='number']:focus {
+  outline-color: var(--red-dark);
+  outline-width: 1.5px;
+  outline-style: solid;
+}
+
+.count::-webkit-inner-spin-button {
+  border: none;
 }

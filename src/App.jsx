@@ -15,9 +15,13 @@ const App = () => {
   return (
     <section className="section-center">
       <h4>Tired Of Boring Lorem Ipsum?</h4>
+      <h5>
+        Generate <span>YOUR</span> Lorem Ipsum!
+      </h5>
       <form className="lorem-form" onSubmit={handleSubmit}>
         <label htmlFor="amount">Paragraphs:</label>
         <input
+          className="count"
           type="number"
           name="amount"
           id="amount"
